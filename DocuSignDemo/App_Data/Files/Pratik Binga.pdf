@@ -1,0 +1,43 @@
+topics to have a look today and tomorrow.
+ 
+:base() have a look conceptually.
+
+ASYNC and AWAIT .wait() in asp.net core , Projecto () and automapperand DTO functionaliy
+
+DI- dependency injection for asp.net core
+
+Repository Pattern and I unit of work.
+
+
+
+
+----
+
+
+To create container / docker
+
+docker images--checks images are present or not
+
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=PRODUCTAPI(!)' -e 'MSSQL_PID=EXPRESS' -p 1445:1433 --name=catalogdb  microsoft/mssql-server-linux:latest
+
+we had created dcoker container for ms sql server.
+
+to check or verify open another powershell window will show active container
+
+docker ps
+
+to connect to MS sql server the docker/ container which we created locally on our machine local.
+
+open sql server management studio and in server name type : localhost,1445
+
+docker exec -it catalogdb{conainer name}   /opt/mssql-tools/bin/sqlcmd{path where sqlcmd is present} -s localhost _U sa
+password: PRODUCTAPI(!)
+
+then you can write commands in sql 
+en
+to use entity framwerork core use 1 nuget package microsoft.entityframeworkcore.tools
+
+second should be added manuallu through csproj.
+
+under in item group--dotnetclitoolreference microsoft.entityframeworkcore.tools.DotNet version-2.0.1
+.
